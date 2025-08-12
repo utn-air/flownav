@@ -2,8 +2,7 @@
 
 [![Project Page](https://img.shields.io/badge/Project%20Page-6cc644&cacheSeconds=60)](https://utn-air.github.io/flownav.github.io/)
 [![arXiv](https://img.shields.io/badge/arXiv-2411.09524-b31b1b.svg)](https://arxiv.org/abs/2411.09524)
-[![GitHub License](https://img.shields.io/github/license/utn-air/flownav?label=License&color=%23e11d48&cacheSeconds=3600)
-](https://github.com/utn-air/flownav/blob/main/LICENSE)
+![GitHub License](https://img.shields.io/github/license/utn-air/flownav?label=License&color=%23e11d48&cacheSeconds=60)
 [![Latest Release](https://img.shields.io/github/v/tag/utn-air/flownav?label=Latest%20Release&color=%4078c0&cacheSeconds=60)
 ](https://github.com/utn-air/flownav/releases)
 
