@@ -3,11 +3,17 @@
 [![Project Page](https://img.shields.io/badge/Project%20Page-6cc644&cacheSeconds=60)](https://utn-air.github.io/flownav.github.io/)
 [![arXiv](https://img.shields.io/badge/arXiv-2411.09524-b31b1b.svg)](https://arxiv.org/abs/2411.09524)
 ![GitHub License](https://img.shields.io/github/license/utn-air/flownav?label=License&color=%23e11d48&cacheSeconds=60)
-[![Latest Release](https://img.shields.io/github/v/tag/utn-air/flownav?label=Latest%20Release&color=%4078c0&cacheSeconds=60)
+[![Latest Release](https://img.shields.io/github/v/tag/utn-air/flownav?label=Latest%20Release&cacheSeconds=60)
 ](https://github.com/utn-air/flownav/releases)
 
 > [!NOTE]  
 > This source code was based on [NoMaD: Goal Masking Diffusion Policies for Navigation and Exploration](https://general-navigation-models.github.io/nomad/index.html).
+
+## 💡 News
+
+- **August 2025**: Training and evaluation code published
+- **June 2025**: Accepted at [IROS 2025](https://www.iros25.org/)
+- **December 2024**: Accepted at accepted at CoRL 2024 workshop on [Learning Effective Abstractions for Planning](https://leap-workshop.github.io/) and workshop on [Differentiable Optimization Everywhere: Simulation, Estimation, Learning, and Control](https://sites.google.com/seas.upenn.edu/corl-2024-workshop-diff/)
 
 ## 🪛 Installation
 
@@ -29,7 +35,7 @@ pdm install
 
 1) Download and process the datasets according to [NoMaD's instructions](https://github.com/robodhruv/visualnav-transformer?tab=readme-ov-file#data-wrangling)
 2) Download [DepthAnything-V2 ViT-s weights](https://huggingface.co/depth-anything/Depth-Anything-V2-Small/resolve/main/depth_anything_v2_vits.pth?download=true)
-3) If you want to use the pretrained model, download the weights from [our latest release](https://github.com/utn-air/flownav/releases). 
+3) If you want to use the pretrained model, download the weights from [our latest release](https://github.com/utn-air/flownav/releases)
 
 ## 🚀 Training
 
@@ -37,7 +43,7 @@ To train the model, you need to adjust the in the configuration YAML [`flownav.y
 
 1) `train` to `True`
 2) `depth/weights_path` to the DepthAnythingV2 checkpoint path
-3) `datasets/<DATASET>/data_folder`, `datasets/<DATASET>/train` and datasets/<DATASET>/`test` to the folders generated during the (data processing step)[#-download-data-and-weights].
+3) `datasets/<DATASET>/data_folder`, `datasets/<DATASET>/train` and `datasets/<DATASET>/test` to the folders generated during the (data processing step)[#-download-data-and-weights]
 
 Then, run the following command:
 
@@ -45,7 +51,7 @@ Then, run the following command:
 python train.py -c <YOUR_CONFIG>.yaml
 ```
 
-If you want to use [wandb](https://wandb.ai/) to log the training, you can set the `wandb_logging` flag in the configuration YAML to `True` and  the `project` and `entity` to your desired project and entity (usually your username). Don't forget to login first:
+If you want to use [wandb](https://wandb.ai/) to log the training, you can set the `use_wandb` flag in the configuration YAML to `True` and  the `project` and `entity` to your desired project and entity (usually your username). Don't forget to login first:
     
 ```bash
 wandb login
@@ -57,7 +63,7 @@ To test the model, you need to have the model trained. Weights are available in 
 
 1) `train` to `False`.
 2) `depth/weights_path` to the DepthAnythingV2 checkpoint path
-2) `load_run` to the path of the desired weights.
+2) `load_run` to the path of the desired weights
 
 Then, run the following command:
 
