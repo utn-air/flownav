@@ -11,7 +11,7 @@
 
 ## 💡 News
 
-- **August 2025**: Training and evaluation code published
+- **August 2025**: Training and evaluation code published, under development deployment code released in side-branch
 - **June 2025**: Accepted at [IROS 2025](https://www.iros25.org/)
 - **December 2024**: Accepted at accepted at CoRL 2024 workshop on [Learning Effective Abstractions for Planning](https://leap-workshop.github.io/) and workshop on [Differentiable Optimization Everywhere: Simulation, Estimation, Learning, and Control](https://sites.google.com/seas.upenn.edu/corl-2024-workshop-diff/)
 
@@ -76,7 +76,7 @@ python train.py -c <YOUR_CONFIG>.yaml
 We deployed to a TurtleBot 4 using ROS2 Humble. 
 
 > [!WARNING]  
-> **Code will be uploaded soon.**
+> **Deployment code is under the development on [dev_deployment](https://github.com/utn-air/flownav/tree/dev_deployment) branch. A final version will be uploaded soon.**
 
 ## 📝 Citation
 
