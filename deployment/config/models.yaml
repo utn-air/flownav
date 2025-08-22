@@ -1,0 +1,4 @@
+flownav: 
+  config_path: "../../train/config/nomad.yaml"
+
+# add your own model configs here after saving the *.pth file to ../model_weight
