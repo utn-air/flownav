@@ -149,3 +149,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# deployment_improv
+deployment/src/test/*
+deployment/src/explore_topomap/*
+conditional-flow-matching/
+flownav_commands.txt

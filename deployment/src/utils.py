@@ -18,14 +18,14 @@ from PIL import Image as PILImage
 from typing import List, Tuple, Dict, Optional
 
 # models
-from vint_train.models.gnm.gnm import GNM
-from vint_train.models.vint.vint import ViNT
+# from flownav.models.gnm.gnm import GNM
+# from vint_train.models.vint.vint import ViNT
 
-from vint_train.models.vint.vit import ViT
-from vint_train.models.nomad.nomad import NoMaD, DenseNetwork
-from vint_train.models.nomad.nomad_vint import NoMaD_ViNT, replace_bn_with_gn
+# from vint_train.models.vint.vit import ViT
+from flownav.models.nomad import NoMaD, DenseNetwork
+from flownav.models.nomad_vint import NoMaD_ViNT, replace_bn_with_gn
 from diffusion_policy.model.diffusion.conditional_unet1d import ConditionalUnet1D
-from vint_train.data.data_utils import IMAGE_ASPECT_RATIO
+from flownav.data.data_utils import IMAGE_ASPECT_RATIO
 import cv2
 
 def load_model(

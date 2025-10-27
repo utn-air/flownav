@@ -275,6 +275,12 @@ if __name__ == "__main__":
         help="Path to store the exploration topomap",
     )
     parser.add_argument(
+        "--dir",
+        default="test",
+        type=str,
+        help="Name of the specific exploration topomap or the experiment",
+    )
+    parser.add_argument(
         "--ckpt",
         required=True,
         type=str,

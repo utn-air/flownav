@@ -15,4 +15,4 @@ REACHED_GOAL_TOPIC = f"{ROBOT_NAMESPACE}/topoplan/reached_goal"
 SAMPLED_ACTIONS_TOPIC = f"{ROBOT_NAMESPACE}/sampled_actions"
 
 # move the robot
-VEL_TOPIC = f"{ROBOT_NAMESPACE}/cmd_vel"
+VEL_TOPIC = f"repub/cmd_vel"
